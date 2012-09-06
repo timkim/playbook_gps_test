@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" 
+        version="1.0.0.0">
+	
+	<name>gpsDemo</name>
+	<description>This application demonstrates how to use HTML5 Geolocation to retrieve GPS location information.</description>
+
+	<!-- Home screen icon courtesy of http://www.freeiconsweb.com -->
+	<icon src="icon.png"/>
+	<content src="index.html"/>
+
+	<license href="http://www.apache.org/licenses/LICENSE-2.0">
+		Licensed under the Apache License, Version 2.0 (the "License");
+		you may not use this file except in compliance with the License.
+		You may obtain a copy of the License at
+			http://www.apache.org/licenses/LICENSE-2.0
+		Unless required by applicable law or agreed to in writing, software
+		distributed under the License is distributed on an "AS IS" BASIS,
+		WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+		See the License for the specific language governing permissions and limitations under the License.
+	</license>
+	
+  <!-- Expose access to all URIs, including the file and http protocols -->
+  <access subdomains="true" uri="http://google.com" />
+  <rim:permissions>
+    <rim:permit>read_geolocation</rim:permit>
+  </rim:permissions>
+</widget>
